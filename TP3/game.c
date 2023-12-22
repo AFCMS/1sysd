@@ -3,20 +3,23 @@
 #include <time.h>
 
 int main() {
-    int val;
-    int choice = -1;
-    srand(time(NULL));
-    val = rand() % 100;
+    int found = 0, secret, guess;
 
-    while (val != choice) {
-        printf("Guess the number: \n");
-        scanf("%d", &choice);
-        if (choice > val) {
-            printf("Too high!\n");
-        } else if (choice < val) {
-            printf("Too low!\n");
+    srand(time(NULL));
+    secret = rand() % 100 + 1;
+
+    printf("J'ai choisi un nombre entre 1 et 100, devinez lequel !\n");
+
+    while (!found) {
+        printf("Devine le nombre: \n");
+        scanf("%d", &guess);
+        if (guess > secret) {
+            printf("Trop haut!\n");
+        } else if (guess < secret) {
+            printf("Trop bas!\n");
         } else {
-            printf("You got it!\n");
+            printf("Trouvé!\n");
+            found = 1;
         }
     }
     return 0;
