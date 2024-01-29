@@ -3,7 +3,7 @@
 CC = gcc
 #CFLAGS = -g
 CFLAGS =
-PROGS = tconvert, countchar1, countchar2, revert, countint
+PROGS = tconvert, countchar1, countchar2, revert, countint, intlist
 
 all: $(PROGS)
 
