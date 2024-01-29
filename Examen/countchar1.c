@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    printf("Nombre d'occurences: %d\n", count_char(argv[1], argv[2][0]));
+    printf("%d\n", count_char(argv[1], argv[2][0]));
 
     return 0;
 }

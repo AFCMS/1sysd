@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
 
     switch (case_sensitive) {
         case 1:
-            printf("Nombre d'occurences: %d\n", count_char(argv[1], argv[2][0]));
+            printf("%d\n", count_char(argv[1], argv[2][0]));
             break;
         case 2:
             for (int c = 0; argv[1][c]; c++) {
@@ -46,7 +46,7 @@ int main(int argc, char *argv[]) {
 
             argv[2][0] = tolower(argv[2][0]);
 
-            printf("Nombre d'occurences: %d\n", count_char(argv[1], argv[2][0]));
+            printf("%d\n", count_char(argv[1], argv[2][0]));
             break;
         default:
     }
